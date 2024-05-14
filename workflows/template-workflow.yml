@@ -1,0 +1,12 @@
+name: Template Workflow
+
+on:
+  workflow_call:
+
+jobs:
+  template-print:
+    runs-on: windows-latest
+
+    steps:
+    - name: Print message from template workflow
+      run: echo "This message is from the template workflow"
